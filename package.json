@@ -5,7 +5,7 @@
   "author": "Assisneto Damasceno",
   "license": "MIT",
   "scripts": {
-    "dev": "nodemon src/index.js"
+    "dev": "nodemon src/index.js --exec babel-node --presets babel-preset-env"
   },
   "dependencies": {
     "body-parser": "^1.19.0",
@@ -16,6 +16,8 @@
     "mongoose": "^5.6.3"
   },
   "devDependencies": {
+    "babel-cli": "^6.26.0",
+    "babel-preset-env": "^1.7.0",
     "nodemon": "^1.19.1"
   }
 }
