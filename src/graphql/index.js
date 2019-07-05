@@ -1,12 +1,12 @@
 import { GraphQLSchema, GraphQLObjectType } from "graphql";
-
+import queries from "./queries/index";
 export default new GraphQLSchema({
-  query: GraphQLObjectType({
+  query: new GraphQLObjectType({
     name: "Query",
     fields: queries
-  }),
-  mutation: GraphQLObjectType({
-    name: "Mutation",
-    fields: mutations
   })
+  // mutation: new GraphQLObjectType({
+  //   name: "Mutation",
+  //   fields: mutations
+  // })
 });

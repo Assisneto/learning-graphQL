@@ -5,7 +5,8 @@
   "author": "Assisneto Damasceno",
   "license": "MIT",
   "scripts": {
-    "dev": "nodemon src/index.js --exec babel-node --presets babel-preset-env"
+    "dev": "nodemon src/index.js --exec babel-node --presets babel-preset-env",
+    "start": "node src/index.js --exec babel-node --presets babel-preset-env"
   },
   "dependencies": {
     "body-parser": "^1.19.0",
