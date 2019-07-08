@@ -1,4 +1,6 @@
-import mongoose, { schema } from "mongoose";
-const Person = new schema({});
+import * as mongoose from "mongoose";
+const Person = new mongoose.Schema({
+  name: String
+});
 
 export default mongoose.model("Person", Person);
